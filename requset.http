@@ -1,0 +1,25 @@
+###
+POST http://127.0.0.1:8000/owners/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "first_name" : "Первый владелец",
+    "last_name" : "какого-то котика"
+}
+
+###
+GET http://127.0.0.1:8000/owners/ HTTP/1.1
+
+###
+GET http://127.0.0.1:8000/cats/ HTTP/1.1
+
+###
+POST http://127.0.0.1:8000/cats/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Second kitty",
+    "color": "Brown",
+    "birth_year": 2010,
+    "owner": 1
+}
